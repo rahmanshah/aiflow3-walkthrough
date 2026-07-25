@@ -13,3 +13,4 @@ main.py
 pyproject.toml
 # Airflow
 introduction/.env
+introduction/config/airflow.cfg
