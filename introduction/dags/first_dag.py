@@ -1,13 +1,13 @@
 from airflow.decorators import dag, task
 
-@dag
+@dag(dag_id="first_dag")
 def first_dag():
 
-    @task
+    @task.python(task_id="first_task")
     def first_task():
         print("Hello from the first task!")
 
-    @task
+    @task.python(task_id="second_task")
     def second_task():
         print("Hello from the second task!")
 
