@@ -16,3 +16,9 @@ introduction/.env
 introduction/config/airflow.cfg
 introduction/logs/
 operators/.env
+operators/config/airflow.cfg
+operators/logs/
+
+xcoms_and_kwargs/.env
+xcoms_and_kwargs/config/airflow.cfg
+xcoms_and_kwargs/logs/
