@@ -21,8 +21,8 @@ def python_dag():
     )
 
     t1 = first_task()
-    t2 = second_task()
-    t3 = third_task()
+    t2 = second_task
+    t3 = third_task
 
     t1 >> t2 >> t3
 

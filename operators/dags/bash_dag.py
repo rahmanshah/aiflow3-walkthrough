@@ -14,7 +14,7 @@ def bash_dag():
 
     
     t1 = first_task()
-    t2 = second_task()
+    t2 = second_task
 
     t1 >> t2
 
