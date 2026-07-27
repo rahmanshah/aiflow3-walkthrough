@@ -8,10 +8,10 @@ def xcoms_manual():
     def fetch_data(ti):
         # Simulate fetching data from an external source/api
         data = {"name": "Airflow", "version": "3.0"}
-        return data
 
         # Push the data to XCom
         ti.xcom_push(key="fetched_data", value=data)
+        return data
 
     @task.python(task_id="task2")
     def process_data(ti):
