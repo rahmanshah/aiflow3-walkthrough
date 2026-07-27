@@ -24,3 +24,8 @@ def xcoms_manual():
     bash_task = BashOperator(
         bash_command="echo 'This is a Bash task!'"
     )
+
+    # define the task dependencies
+    fetch_data >> process_data() >> bash_task
+
+dag_instance = xcoms_manual()
