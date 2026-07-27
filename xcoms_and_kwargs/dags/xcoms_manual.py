@@ -1,4 +1,5 @@
 from airflow.decorators import dag, task
+from airflow.operators.bash import BashOperator
 
 @dag
 def xcoms_manual():
@@ -19,3 +20,7 @@ def xcoms_manual():
         # simulate processing the data
         processed_data = f"Processed {pulled_data['name']} version {pulled_data['version']}"
         print(processed_data)
+
+    bash_task = BashOperator(
+        bash_command="echo 'This is a Bash task!'"
+    )
